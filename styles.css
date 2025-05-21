@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    background: #222;
+    color: #fff;
+    padding: 1rem 0;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-links a:hover {
+    color: #00bcd4;
+}
+.hero-section {
+    background: linear-gradient(120deg, #00bcd4 0%, #2196f3 100%);
+    color: #fff;
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    background: #fff;
+    color: #2196f3;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.btn:hover {
+    background: #2196f3;
+    color: #fff;
+}
+.features-section {
+    padding: 4rem 0;
+    background: #fff;
+}
+.features-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.features-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feature-card {
+    background: #f1f1f1;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 250px;
+    text-align: center;
+}
+.contact-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+button.btn {
+    width: fit-content;
+    align-self: center;
+}
+#formMessage {
+    text-align: center;
+    margin-top: 1rem;
+    color: #2196f3;
+    font-weight: bold;
+}
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+@media (max-width: 800px) {
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card {
+        width: 90%;
+    }
+}
